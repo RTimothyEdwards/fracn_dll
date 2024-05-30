@@ -1,0 +1,20 @@
+These files are a variation of the DLL on Caravel, but with
+a fractional-N divider with 3 bits, so the feedback divider
+can be specified in eighths of an integer.
+
+Therefore from a 10MHz clock, assuming a 70 to 150 MHz
+range of the ring oscillator, valid feedback values would
+be
+	Divider		Oscillator rate
+	-------		---------------
+	7.0		70 MHz
+	7.125		71.25 MHz
+	7.25		72.5 MHz
+	7.375		73.75 MHz
+	7.5		75 MHz
+	...
+	14.5		145 MHz
+	14.625		146.25 MHz
+	14.75		147.5 MHz
+	14.875		148.75 MHz
+	15.0		150 MHz
